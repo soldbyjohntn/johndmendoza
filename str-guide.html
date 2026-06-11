@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smoky Mountain STR Investor Guide | Permits, Zoning &amp; Returns | Sevier County, TN</title>
-<meta name="description" content="How to buy a short-term rental cabin in Sevierville, Pigeon Forge, and Gatlinburg TN: STR permits by jurisdiction, the 12-guest fire code threshold, financing, and the STR tax strategy — from local broker John Mendoza.">
+<title>Smoky Mountain STR Investor Guide | Permits, Inspections &amp; Returns | Sevier County, TN</title>
+<meta name="description" content="The complete beginner's guide to buying a short-term rental cabin in Sevierville, Pigeon Forge, and Gatlinburg TN: the county STRU permit program, fire marshal inspection checklist, occupancy rules, due diligence on resale cabins, financing, and the STR tax strategy — from local broker John Mendoza.">
 <link rel="canonical" href="https://johndmendoza.com/str-guide.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D0D0D'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23C4A060' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://johndmendoza.com/str-guide.html">
 <meta property="og:title" content="Smoky Mountain STR Investor Guide | Sevier County, TN">
-<meta property="og:description" content="Permits, zoning, the 12-guest fire code threshold, financing, and tax strategy for cabin investors — written by a local broker.">
+<meta property="og:description" content="Permits, fire marshal inspections, occupancy rules, due diligence, financing, and tax strategy for cabin investors — written by a local broker.">
 <meta property="og:image" content="https://johndmendoza.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +21,14 @@
   "@type": "Article",
   "headline": "Smoky Mountain STR Investor Guide",
   "author": {"@type": "Person", "name": "John Mendoza", "jobTitle": "Affiliate Broker", "worksFor": "Realty Executives Associates"},
-  "about": "Short-term rental cabin investing in Sevier County, Tennessee",
+  "about": "Short-term rental cabin investing in Sevier County, Tennessee — permits, inspections, occupancy, and underwriting",
   "url": "https://johndmendoza.com/str-guide.html"
 }
 </script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 72px; }
   body { font-family: 'DM Sans', sans-serif; color: #E8E0CC; background: #111111; }
 
   nav {
@@ -68,6 +69,17 @@
   .hero h1 em { color: #1A1A1A; font-style: italic; }
   .hero p { color: rgba(255,255,255,0.78); font-size: 17px; line-height: 1.65; max-width: 560px; font-weight: 300; }
 
+  .toc {
+    max-width: 820px; margin: 0 auto; padding: 1.75rem 2rem 0;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .toc a {
+    font-size: 12px; color: #B0A88A; text-decoration: none;
+    border: 1px solid #2A2A2A; border-radius: 100px; padding: 7px 16px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .toc a:hover { border-color: #C4A060; color: #C4A060; }
+
   .section { padding: 3.5rem 2rem; max-width: 820px; margin: 0 auto; }
   .section-label {
     font-size: 11px; font-weight: 500; text-transform: uppercase;
@@ -80,17 +92,46 @@
   .section p { font-size: 15px; line-height: 1.8; color: #B0A88A; margin-bottom: 1rem; font-weight: 300; }
   .section p strong { color: #E8E0CC; font-weight: 500; }
 
-  .juris-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 1.5rem 0; }
+  .juris-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 1.5rem 0; }
   .juris-card { background: #141414; border: 1px solid #2A2A2A; border-radius: 14px; padding: 1.5rem; }
   .juris-card h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 500; color: #C4A060; margin-bottom: 8px; }
   .juris-card p { font-size: 13px; color: #999; line-height: 1.6; margin: 0; }
+
+  /* Jurisdiction deep-dive blocks */
+  .jd { background: #0F0F0F; border: 1px solid #2A2A2A; border-radius: 14px; padding: 1.75rem; margin: 1.5rem 0; }
+  .jd-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  .jd-head h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 500; color: #fff; }
+  .jd-verify { font-size: 12px; color: #777; }
+  .jd-verify a, .jd-verify span { color: #C4A060; text-decoration: none; }
+  .jd-tagline { font-size: 13px; color: #999; line-height: 1.6; margin-bottom: 1.1rem; font-weight: 300; }
+  .jd-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+  .jd-col h4 { font-size: 11px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: #C4A060; margin-bottom: 8px; }
+  .jd-col ul { list-style: none; }
+  .jd-col li { font-size: 13px; color: #B0A88A; line-height: 1.6; padding: 4px 0 4px 14px; position: relative; font-weight: 300; }
+  .jd-col li::before { content: '·'; position: absolute; left: 0; color: #C4A060; font-weight: 700; }
+  .jd-col li strong { color: #E8E0CC; font-weight: 500; }
+  .gotcha {
+    margin-top: 1.25rem; padding: 0.9rem 1.1rem;
+    background: rgba(196,160,96,0.07); border: 1px solid rgba(196,160,96,0.25); border-radius: 10px;
+    font-size: 13px; color: #B0A88A; line-height: 1.65; font-weight: 300;
+  }
+  .gotcha strong { color: #C4A060; font-weight: 500; }
+
+  /* Tax table */
+  .tax-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+  .tax-table th { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #C4A060; text-align: left; padding: 10px 12px; border-bottom: 1px solid #2A2A2A; }
+  .tax-table td { font-size: 13px; color: #B0A88A; padding: 11px 12px; border-bottom: 0.5px solid #1E1E1E; font-weight: 300; vertical-align: top; }
+  .tax-table td:first-child { color: #E8E0CC; font-weight: 500; }
+  .tax-table .total-row td { color: #C4A060; font-weight: 500; border-top: 1px solid #2A2A2A; border-bottom: none; }
+  .table-scroll { overflow-x: auto; }
 
   .callout {
     background: #0D0D0D; border-left: 4px solid #C4A060; border-radius: 14px;
     padding: 1.5rem 1.75rem; margin: 1.75rem 0;
   }
   .callout h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 19px; font-weight: 500; margin-bottom: 8px; }
-  .callout p { font-size: 14px; color: #B0A88A; line-height: 1.7; margin: 0; }
+  .callout p { font-size: 14px; color: #B0A88A; line-height: 1.7; margin: 0 0 0.75rem; }
+  .callout p:last-child { margin-bottom: 0; }
 
   .check-list { list-style: none; margin: 1.25rem 0 1.5rem; }
   .check-list li {
@@ -99,6 +140,53 @@
   }
   .check-list li::before { content: '✓'; position: absolute; left: 2px; color: #C4A060; }
   .check-list li strong { color: #E8E0CC; font-weight: 500; }
+
+  /* Permit fact strip */
+  .fact-strip {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px; margin: 1.75rem 0;
+  }
+  .fact {
+    background: #0D0D0D; border: 1px solid #2A2A2A; border-radius: 14px;
+    padding: 1.4rem 1.25rem;
+  }
+  .fact .num { font-family: 'Playfair Display', serif; font-size: 28px; color: #C4A060; line-height: 1; margin-bottom: 8px; }
+  .fact .lbl { font-size: 12px; color: #999; line-height: 1.5; }
+
+  /* Due diligence steps — a real sequence */
+  .steps { counter-reset: step; margin: 1.5rem 0; }
+  .step {
+    display: flex; gap: 18px; padding: 1.4rem 0;
+    border-bottom: 0.5px solid #1E1E1E;
+  }
+  .step::before {
+    counter-increment: step; content: counter(step, decimal-leading-zero);
+    font-family: 'Playfair Display', serif; font-size: 22px; color: #C4A060;
+    flex: 0 0 42px; line-height: 1.2;
+  }
+  .step h3 { font-size: 15px; font-weight: 500; color: #E8E0CC; margin-bottom: 6px; }
+  .step p { font-size: 14px; color: #B0A88A; line-height: 1.7; margin: 0; font-weight: 300; }
+  .step p strong { color: #E8E0CC; font-weight: 500; }
+
+  /* Inspection accordion-style cards */
+  .inspect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1.5rem 0; }
+  .inspect-card { background: #141414; border: 1px solid #2A2A2A; border-radius: 14px; padding: 1.4rem 1.5rem; }
+  .inspect-card h3 { font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #C4A060; margin-bottom: 10px; }
+  .inspect-card ul { list-style: none; }
+  .inspect-card li { font-size: 13px; color: #B0A88A; line-height: 1.6; padding: 5px 0 5px 16px; position: relative; font-weight: 300; }
+  .inspect-card li::before { content: '·'; position: absolute; left: 2px; color: #C4A060; font-weight: 700; }
+  .inspect-card li strong { color: #E8E0CC; font-weight: 500; }
+
+  /* Contacts table */
+  .contact-rows { margin: 1.5rem 0; border-top: 0.5px solid #2A2A2A; }
+  .contact-row {
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding: 14px 0; border-bottom: 0.5px solid #2A2A2A;
+  }
+  .contact-row .who { font-size: 14px; color: #E8E0CC; font-weight: 500; }
+  .contact-row .why { font-size: 12px; color: #777; display: block; margin-top: 2px; font-weight: 300; }
+  .contact-row .how { font-size: 13px; color: #B0A88A; text-align: right; line-height: 1.6; font-weight: 300; }
+  .contact-row .how a { color: #C4A060; text-decoration: none; }
 
   .cta-band {
     background: #0D0D0D; border-radius: 14px; padding: 2rem;
@@ -116,13 +204,18 @@
 
   .alt { background: #141414; }
   .alt-inner { max-width: 820px; margin: 0 auto; padding: 3.5rem 2rem; }
+  .alt .inspect-card, .alt .juris-card { background: #0F0F0F; }
+  .alt .fact { background: #0F0F0F; }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     nav { padding: 1rem; }
     .nav-links a:not(.nav-cta) { display: none; }
     .hero { padding: 3.5rem 1.25rem 3rem; }
     .section { padding: 3rem 1.25rem; }
     .alt-inner { padding: 3rem 1.25rem; }
+    .toc { padding: 1.5rem 1.25rem 0; }
+    .inspect-grid { grid-template-columns: 1fr; }
+    .contact-row .how { text-align: left; }
   }
 </style>
 </head>
@@ -145,48 +238,359 @@
   <div class="hero-inner">
     <div class="hero-badge">The Local Playbook</div>
     <h1>The Smoky Mountain <em>STR Investor</em> Guide</h1>
-    <p>Permits, zoning, fire code, financing, and the tax strategy — everything I walk my investor clients through before they buy a cabin in Sevier County, written down in one place.</p>
+    <p>Permits, zoning, fire code, the county inspection, occupancy rules, financing, and the tax strategy — everything I walk my investor clients through before they buy a cabin in Sevier County, written down in one place.</p>
   </div>
 </section>
 
-<div class="section">
+<div class="toc">
+  <a href="#why-here">Why Here</a>
+  <a href="#jurisdictions">Jurisdictions</a>
+  <a href="#permit">The County Permit</a>
+  <a href="#resale">Buying a Resale STR</a>
+  <a href="#inspection">The Inspection</a>
+  <a href="#occupancy">Occupancy &amp; the CO</a>
+  <a href="#numbers">Underwriting</a>
+  <a href="#tax">Tax Strategy</a>
+  <a href="#contacts">Who to Call</a>
+</div>
+
+<div class="section" id="why-here">
   <div class="section-label">Why Here</div>
   <h2>12+ million visitors a year don't need convincing</h2>
   <p>The Great Smoky Mountains is the most-visited national park in the country, and Sevier County — Sevierville, Pigeon Forge, and Gatlinburg — is its front door. That visitor volume is why this market supports one of the densest short-term rental economies in the U.S., and why cabins here trade as income property first and vacation homes second.</p>
   <p>But the market punishes buyers who treat every cabin the same. <strong>Where the cabin sits determines what permits it needs, what it can legally sleep, and what it will actually earn.</strong> That's what this guide covers.</p>
 </div>
 
-<div class="alt">
+<div class="alt" id="jurisdictions">
   <div class="alt-inner">
     <div class="section-label">Permits &amp; Zoning</div>
     <h2 style="font-family:'Playfair Display',serif; font-size:clamp(24px,3vw,32px); font-weight:500; margin-bottom:1.25rem; color:#fff;">Every jurisdiction plays by different rules</h2>
-    <p style="font-size:15px; line-height:1.8; color:#B0A88A; margin-bottom:1rem; font-weight:300;">"Sevier County" is really four regulatory environments. The same cabin moved a mile down the road can face a completely different permit process — or be ineligible to rent at all.</p>
-    <div class="juris-grid">
-      <div class="juris-card">
+    <p style="font-size:15px; line-height:1.8; color:#B0A88A; margin-bottom:1rem; font-weight:300;">"Sevier County" is really four regulatory environments. The same cabin moved a mile down the road can face a completely different permit stack, occupancy ceiling, tax load — or be ineligible to rent at all. Here's the full picture, jurisdiction by jurisdiction.</p>
+
+    <div class="callout">
+      <h3>Tennessee's ground rules (everywhere in the Smokies)</h3>
+      <p>Start with the good news: <strong style="color:#E8E0CC;">Tennessee state law prevents local governments from banning short-term rentals outright.</strong> Cities and counties regulate through zoning, permits, and safety codes — but the right to operate is protected at the state level, which makes this one of the friendliest STR frameworks in the country.</p>
+      <p>What applies everywhere: 7% state sales tax plus 2.75% Sevier County local sales tax on every booking (9.75% before any city taxes), registration with the TN Department of Revenue for a tax ID, and — my strong recommendation, and what most permit programs expect — at least $500K in liability coverage, with $1M being the smarter number. The offset that makes it all worth it: <strong style="color:#E8E0CC;">Tennessee has no state income tax on your rental income.</strong></p>
+    </div>
+
+    <div class="jd">
+      <div class="jd-head">
         <h3>Unincorporated Sevier County</h3>
-        <p>Short-term rentals operate under the county's STRU permit program. Permitting, inspections, and renewal requirements apply — and permit status should be verified on any resale cabin before you write an offer.</p>
+        <div class="jd-verify">Verify: Fire Marshal 865-774-3603 · <a href="mailto:firepermits@seviercountytn.org">firepermits@seviercountytn.org</a></div>
       </div>
-      <div class="juris-card">
-        <h3>Pigeon Forge</h3>
-        <p>City zoning controls where overnight rentals are allowed. Many cabin communities are zoned for it; pockets are not. Never assume — verify the parcel's zoning with the city before going under contract.</p>
+      <p class="jd-tagline">Wears Valley, Walden's Creek, most of the big cabin corridors — and the most STR-friendly zoning of the four. This is where the majority of my investor clients buy, and the county program is covered in full depth below.</p>
+      <div class="jd-cols">
+        <div class="jd-col">
+          <h4>Permits &amp; Fees</h4>
+          <ul>
+            <li><strong>STRU permit:</strong> $250/yr up to 12 guests, +$25 per occupant at 13+</li>
+            <li><strong>County business license:</strong> $15 + $3 per $1,000 of gross receipts, annually</li>
+            <li>Annual life-safety inspection (full checklist below)</li>
+            <li>Fail twice? Third and later inspections run $25 each</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Zoning</h4>
+          <ul>
+            <li>Most permissive jurisdiction in the Smokies</li>
+            <li>No residential-zone STR prohibitions</li>
+            <li>No occupancy cap beyond the CO and permit program</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Taxes You Collect</h4>
+          <ul>
+            <li>9.75% combined sales tax</li>
+            <li><strong>+3% county lodging tax</strong> (applies outside city limits), remitted monthly to the County Trustee</li>
+            <li>Effective total: ~12.75%</li>
+          </ul>
+        </div>
       </div>
-      <div class="juris-card">
-        <h3>Gatlinburg</h3>
-        <p>Long-established tourist rental market with its own city permitting and inspection regime. Density and parking can be the gotchas here, especially in older chalets.</p>
-      </div>
-      <div class="juris-card">
+      <div class="gotcha"><strong>The gotcha:</strong> none, really — that's the point. The county's flexibility is exactly why Wears Valley and the unincorporated corridors keep absorbing new cabin development. Your compliance work is the fire marshal program on this page.</div>
+    </div>
+
+    <div class="jd">
+      <div class="jd-head">
         <h3>Sevierville</h3>
-        <p>City limits have their own rules separate from the county. Newer resort communities (Shagbark-style gated developments) are often the cleanest path — built and platted with STR use in mind.</p>
+        <div class="jd-verify">Verify: City of Sevierville <span>865-453-5504</span></div>
+      </div>
+      <p class="jd-tagline">Newer construction, lower entry prices, strong revenue — and the lightest tax load of the three cities. Shagbark-style gated resort communities platted for STR use are the cleanest path here.</p>
+      <div class="jd-cols">
+        <div class="jd-col">
+          <h4>Permits &amp; Fees</h4>
+          <ul>
+            <li><strong>Short-Term Operational Permit (S.T.O.P.):</strong> $150 initial, $50 annual renewal</li>
+            <li>City business license required inside city limits</li>
+            <li>Fire Department life-safety inspection before approval, then annually</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Zoning</h4>
+          <ul>
+            <li>STRs broadly workable, but zoning is parcel-specific — verify before contract</li>
+            <li><strong>MDR (Medium Density Residential)</strong> districts carry the notification rule (see gotcha)</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Taxes You Collect</h4>
+          <ul>
+            <li>9.75% combined sales tax</li>
+            <li>No additional city lodging tax — the lightest stack in the market</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gotcha"><strong>The gotcha:</strong> in MDR zones, neighbors within 100 feet are notified when you apply — and opposition can trigger a public hearing. It's not an automatic denial, but it adds time and uncertainty. If your target is in an MDR district, build that into your closing timeline.</div>
+    </div>
+
+    <div class="jd">
+      <div class="jd-head">
+        <h3>Pigeon Forge</h3>
+        <div class="jd-verify">Verify: Building Department <span>865-429-7312</span></div>
+      </div>
+      <p class="jd-tagline">Dollywood's front yard. STRs are explicitly permitted and the framework is structured — but the occupancy math and the R-1 grandfathering rules decide whether a specific cabin pencils.</p>
+      <div class="jd-cols">
+        <div class="jd-col">
+          <h4>Permits &amp; Fees</h4>
+          <ul>
+            <li><strong>City business license:</strong> $35 + $3 per $1,000 of gross receipts</li>
+            <li><strong>Transient rental registration:</strong> $125 initial, $75/yr renewal</li>
+            <li><strong>STRU permit application:</strong> $300</li>
+            <li><strong>Fire safety certification:</strong> $75 initial inspection, $50 annual re-inspection</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Zoning &amp; Occupancy</h4>
+          <ul>
+            <li><strong>Hard caps: 2 guests per bed, 2 beds per room, 12 people per property</strong></li>
+            <li>R-1 districts: new STRs restricted; only units operating with a valid permit <strong>before August 13, 2018</strong> are grandfathered</li>
+            <li>R-2 and higher, plus commercial zones: permitted with licensing</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Taxes You Collect</h4>
+          <ul>
+            <li>9.75% combined sales tax</li>
+            <li><strong>+2.5% city gross receipts tax</strong></li>
+            <li>Effective total: ~12.25%</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gotcha"><strong>The gotcha:</strong> the 12-person ceiling applies no matter what the floor plan sleeps. That "sleeps 16" lodge loses a quarter of its advertised occupancy the moment it sits inside Pigeon Forge city limits — underwrite on 12, not on the bunk count. And if you're buying a grandfathered R-1 cabin, make the contract contingent on the permit actually transferring.</div>
+    </div>
+
+    <div class="jd">
+      <div class="jd-head">
+        <h3>Gatlinburg</h3>
+        <div class="jd-verify">Verify: City of Gatlinburg <span>865-436-1400</span></div>
+      </div>
+      <p class="jd-tagline">The biggest name and some of the highest nightly rates in the Smokies — paired with the most layered rulebook. Two of the four traps in this market live here.</p>
+      <div class="jd-cols">
+        <div class="jd-col">
+          <h4>Permits &amp; Fees</h4>
+          <ul>
+            <li><strong>Tourist Residency (TR) permit:</strong> $200 for up to 2 bedrooms, +$75 per additional bedroom</li>
+            <li><strong>Two business licenses</strong> — city and county, $15 each plus gross-receipts rates</li>
+            <li>Annual fire and building inspection</li>
+            <li>Sprinklers required above 3 stories, 5,000 SF, or 12 occupants</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Zoning</h4>
+          <ul>
+            <li><strong>Prohibited: R-1A and R-2A</strong> residential districts</li>
+            <li>Permitted: R-3, Tourism Development Zones, C-1 and C-2 commercial</li>
+            <li>Confirm the parcel's designation with city planning before going under contract — every time</li>
+          </ul>
+        </div>
+        <div class="jd-col">
+          <h4>Taxes You Collect</h4>
+          <ul>
+            <li>9.75% combined sales tax</li>
+            <li><strong>+1.25% city gross receipts tax</strong></li>
+            <li><strong>+3% city hotel/motel tax</strong></li>
+            <li>Effective total: ~14% — the heaviest in the market</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gotcha"><strong>The gotcha:</strong> property tax reclassification. A non-owner-occupied STR holding a business license can be moved from the 25% residential assessment ratio to the <strong>40% commercial ratio</strong>. The tax rate doesn't change — your assessed value does, and your bill grows with it. I underwrite every Gatlinburg deal at the commercial ratio so my clients are never surprised by the reassessment letter.</div>
+    </div>
+
+    <div class="table-scroll">
+      <table class="tax-table">
+        <thead>
+          <tr><th>Tax</th><th>Rate</th><th>Where it applies</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tennessee state sales tax</td><td>7%</td><td>Every STR in the state</td></tr>
+          <tr><td>Sevier County local sales tax</td><td>2.75%</td><td>Everywhere in the county</td></tr>
+          <tr><td>Sevier County lodging tax</td><td>3%</td><td>Outside city limits only</td></tr>
+          <tr><td>Pigeon Forge gross receipts tax</td><td>2.5%</td><td>Inside Pigeon Forge</td></tr>
+          <tr><td>Gatlinburg gross receipts tax</td><td>1.25%</td><td>Inside Gatlinburg</td></tr>
+          <tr><td>Gatlinburg hotel/motel tax</td><td>3%</td><td>Inside Gatlinburg</td></tr>
+          <tr class="total-row"><td>Effective totals</td><td colspan="2">Sevierville ~9.75% · Pigeon Forge ~12.25% · County ~12.75% · Gatlinburg ~14%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px; line-height:1.7; color:#777; margin-bottom:0; font-weight:300;">Airbnb and Vrbo auto-collect some of these — but the legal responsibility for getting all of them remitted stays with you. A local CPA who works STRs is cheap insurance. And one honest note: fees and rates above are current as I write this and they change without ceremony, so verify with the numbers listed on each card before you wire earnest money.</p>
+  </div>
+</div>
+
+<div class="section" id="permit">
+  <div class="section-label">The County Permit, Decoded</div>
+  <h2>The STRU permit program in plain English</h2>
+  <p>If your cabin sits in unincorporated Sevier County — and most of the big rental corridors do — it operates under the Sevier County Fire Marshal's Short-Term Rental Unit (STRU) permit program. Here's the structure of it:</p>
+  <div class="fact-strip">
+    <div class="fact"><div class="num">$250<span style="font-size:15px;">/yr</span></div><div class="lbl">Annual operational permit fee for an occupancy of 12 or fewer guests</div></div>
+    <div class="fact"><div class="num">+$25</div><div class="lbl">Per occupant, added to the fee, once occupancy hits 13 or more</div></div>
+    <div class="fact"><div class="num">$50<span style="font-size:15px;">/day</span></div><div class="lbl">Penalty the county can assess for operating without a permit</div></div>
+    <div class="fact"><div class="num">12<span style="font-size:15px;"> mo</span></div><div class="lbl">Permit term — valid for 12 months, pending the on-site inspection</div></div>
+  </div>
+  <p>A few rules that matter more than they look:</p>
+  <ul class="check-list">
+    <li><strong>Advertising counts.</strong> If the inspection finds sleeping accommodations — or the listing advertises occupancy — above what the permit application stated, the owner is billed for the difference. The county reads Airbnb listings too.</li>
+    <li><strong>Fees are non-refundable.</strong> Apply for the occupancy you can actually support, not the one you hope for.</li>
+    <li><strong>60 days unpaid = revoked.</strong> If a permit invoice sits unpaid 60 days, the permit is revoked and the cabin can't legally operate until balances are cleared and the permit is reinstated.</li>
+    <li><strong>A lapse is expensive.</strong> Units that never obtained a permit before the original June 30, 2024 deadline — or that let a permit lapse more than 6 months — lose grandfathered status and must meet the locally adopted fire and life safety codes. On an older cabin, that can mean real construction dollars.</li>
+    <li><strong>The owner signs.</strong> Applications must be signed by the owner, or carry a signed owner's acknowledgement form if someone files on the owner's behalf. Unsigned applications are invalid — no permit.</li>
+  </ul>
+</div>
+
+<div class="alt" id="resale">
+  <div class="alt-inner">
+    <div class="section-label">Buying a Resale STR</div>
+    <h2 style="font-family:'Playfair Display',serif; font-size:clamp(24px,3vw,32px); font-weight:500; margin-bottom:1.25rem; color:#fff;">Due diligence on a cabin that's already renting</h2>
+    <p style="font-size:15px; line-height:1.8; color:#B0A88A; margin-bottom:0.5rem; font-weight:300;">Good news first: when you buy a cabin that already holds a county STRU permit, <strong style="color:#E8E0CC;">the permit account transfers to you as the new owner.</strong> You're not starting from zero. But "transfers" is not the same as "is clean" — and the permit's history becomes your history. This is the sequence I run on every resale STR before my clients write an offer:</p>
+    <div class="steps">
+      <div class="step">
+        <div>
+          <h3>Pull the Certificate of Occupancy</h3>
+          <p>The CO sets the maximum legal occupancy for the structure — full stop. Verify it with the Building Inspection Department (865-774-7120) and check it against what the listing advertises. A "sleeps 16" listing on a 12-person CO is a problem you'd be buying.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Confirm the area allows STRs</h3>
+          <p>The Property Assessor's office (865-453-3242) can confirm the parcel sits in an area where short-term rentals are permitted. Two minutes on the phone versus discovering a restriction after closing.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Get the original application date</h3>
+          <p>Via public records request to the county (or from the seller), confirm the permit application was filed before the original June 30, 2024 deadline. That date does two things: it confirms grandfathered status, and it tells you the account's <strong>renewal date</strong> — which becomes your renewal date.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Pull the inspection reports</h3>
+          <p>Same records request: get copies of any STRU inspection reports on file. You'll learn whether the cabin has actually been inspected, what was flagged, and whether it passed — before those open items become your punch list.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>File the change of information after closing</h3>
+          <p>Once you own it, submit the county's change of information application (with the Change of Owner box checked and your purchase date) to <strong>firepermits@seviercountytn.org</strong> so the account reflects you. Remember the signature rule: the owner signs, or an owner's acknowledgement form rides along.</p>
+        </div>
       </div>
     </div>
     <div class="callout">
-      <h3>The 12-guest threshold</h3>
-      <p>Tennessee fire code treats large-occupancy rentals differently: once a cabin sleeps roughly 13 or more guests, it can cross into commercial fire code territory — sprinkler systems, commercial egress, and a very different inspection standard. Big lodges earn the most gross revenue in this market, but the occupancy number on the listing and the occupancy number the fire marshal will sign off on are not always the same thing. I check this on every large-group property before my clients offer.</p>
+      <h3>Why the invoice date matters at closing</h3>
+      <p>The owner of record at the time a permit invoice is created is responsible for paying it — and failing to notify the county that a unit left the program doesn't erase that responsibility. On a purchase, that means confirming the account is paid current and the ownership change is filed promptly, so a prior owner's unpaid invoice never becomes your revoked permit.</p>
     </div>
   </div>
 </div>
 
-<div class="section">
+<div class="section" id="inspection">
+  <div class="section-label">The Inspection</div>
+  <h2>What the fire marshal actually checks</h2>
+  <p>Every county STRU permit is pending an on-site inspection, and most "failed inspection" stories trace back to a handful of inexpensive, fixable items. This is the county's own list of the most commonly found issues (revised 11/8/2024) — it's <strong>not exhaustive</strong>, and requirements vary by when the cabin was built and whether it was remodeled, but if your cabin clears all of this, you're walking into the inspection in good shape.</p>
+  <div class="inspect-grid">
+    <div class="inspect-card">
+      <h3>Address Identification</h3>
+      <ul>
+        <li>Numbers <strong>at least 4" tall</strong>, plainly visible from the street or driveway entrance — house or mailbox is fine</li>
+        <li>Multiple units at one address each need their own ID (Unit #1, Unit #2)</li>
+        <li>Split driveways need numbers pointing the right direction</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Smoke Alarms</h3>
+      <ul>
+        <li>UL 217 listed; in <strong>every bedroom and sleeping area</strong> — and a sofa bed, bunk, or futon counts as a sleeping area</li>
+        <li>Also outside sleeping rooms and on <strong>every story</strong>, including basements</li>
+        <li>Must be <strong>interconnected</strong> — one sounds, they all sound. Hardwired by an electrician or UL-listed wireless both work</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Carbon Monoxide Detectors</h3>
+      <ul>
+        <li>Within <strong>10 feet</strong> of every fuel-burning, natural gas, or propane appliance</li>
+        <li>Within <strong>15 feet</strong> of every bedroom door</li>
+        <li>Every alarm must actually sound when the test button is pushed</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Fire Extinguishers</h3>
+      <ul>
+        <li>Minimum <strong>2A:10BC rating, one per level</strong></li>
+        <li>Inspected and tagged <strong>annually</strong> by a certified extinguisher company (new purchase? keep the receipt handy, then get it tagged next year)</li>
+        <li>If it lives in a closet or cabinet, the door needs a "Fire Extinguisher Inside" label</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Evacuation Maps &amp; Exits</h3>
+      <ul>
+        <li>Floor evacuation plan posted conspicuously <strong>on each level</strong>, showing sleeping areas and exit routes</li>
+        <li>Must include a <strong>"YOU ARE HERE"</strong> marker with guidance out from that spot — hand-drawn is acceptable</li>
+        <li>Exits never obstructed; exit/emergency lighting working where applicable</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Chimneys &amp; Fireboxes</h3>
+      <ul>
+        <li>Professionally cleaned and inspected <strong>annually by a certified chimney sweep</strong></li>
+        <li>Out-of-service chimney? It must be completely blocked off from guest access</li>
+        <li>Annual inspection of gas heating appliances is recommended</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Grills &amp; Fire Pits</h3>
+      <ul>
+        <li><strong>No charcoal grills or open-flame cooking on any part of the structure</strong> — 10 feet minimum from the structure and combustibles</li>
+        <li>Gas/propane grills on decks need a non-combustible mat, a <strong>60-minute shutoff timer</strong> on the gas line, anchoring so the grill can't move, and 18" clearance from railings</li>
+        <li>Wood-burning fire pits: never on the deck, minimum <strong>15 feet</strong> from the structure (decks count as structure); gas fire pits on decks follow the same four grill rules</li>
+      </ul>
+    </div>
+    <div class="inspect-card">
+      <h3>Pools &amp; Hot Tubs</h3>
+      <ul>
+        <li>Pools — indoor and outdoor — need an <strong>in-water splash alarm</strong> (Katie Beth's Law, T.C.A. §§ 68-14-801–807)</li>
+        <li>Pool-room doors: self-closing/self-latching outswing with the latch at 54", a UL 2017 door alarm with bypass button, or a conforming automatic cover; outdoor pools need 48"-minimum fencing with self-latching gates</li>
+        <li>Hot tubs: windows within 60" must be tempered or filmed; fall protection if the tub sits within 18" of deck railing; cover intact and working</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout">
+    <h3>The indoor-pool cabin note</h3>
+    <p>Indoor pools are the strongest revenue amenity in this market — and the most inspection-sensitive. Door hardware, alarms, and the splash alarm are exactly the items the fire marshal looks at. If you're buying or building an indoor-pool cabin, get this hardware right before the inspection, not after a failed one.</p>
+  </div>
+  <p>Cabins with sprinkler systems or fire alarm systems carry one more recurring obligation: <strong>annual inspection by a Tennessee-licensed company</strong>, with every noted deficiency corrected. Budget for it as a line item, not a surprise.</p>
+</div>
+
+<div class="alt" id="occupancy">
+  <div class="alt-inner">
+    <div class="section-label">Occupancy &amp; the CO</div>
+    <h2 style="font-family:'Playfair Display',serif; font-size:clamp(24px,3vw,32px); font-weight:500; margin-bottom:1.25rem; color:#fff;">The certificate of occupancy is the law of the cabin</h2>
+    <p style="font-size:15px; line-height:1.8; color:#B0A88A; margin-bottom:1rem; font-weight:300;">Beginners fixate on bedroom count. The number that actually governs is on the <strong style="color:#E8E0CC;">certificate of occupancy</strong>. Under the residential code as the county applies it, a transient rental is <strong style="color:#E8E0CC;">illegally occupied the moment guests exceed the CO</strong> — a cabin with a 12-person CO rented to 13 people is out of compliance, "grandfathered" or not. Grandfathering protects a legal existing use; it doesn't create headroom above it.</p>
+    <p style="font-size:15px; line-height:1.8; color:#B0A88A; margin-bottom:1rem; font-weight:300;">And here's the date that explains the whole large-cabin market: <strong style="color:#E8E0CC;">beginning January 2016, Sevier County capped new COs for overnight rentals at twelve persons.</strong> A cabin built after January 2016 that wants to sleep 13+ needs a permit through the State of Tennessee Fire Marshal's Office — commercial territory: sprinklers, commercial egress, a different inspection standard entirely. That's why true 13+ occupancy cabins command premium pricing: the supply is structurally constrained.</p>
+    <div class="callout">
+      <h3>Want to raise a cabin's occupancy? The county process:</h3>
+      <p>1. Call the building department (865-774-7120) and confirm what the CO actually allows. 2. Complete the change of information application with the new occupancy. 3. Email firepermits@seviercountytn.org — address in the subject line, state the occupancy you're going <em>from</em> and <em>to</em>, attach the completed application and a copy of the CO. 4. Schedule the on-site inspection; approval is pending the fire marshal signing off.</p>
+      <p>Remember the fee math: crossing from 12 to 13+ moves you into the $25-per-occupant tier — and possibly into a different code world. Run the revenue upside against the compliance cost before assuming bigger is better.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="numbers">
   <div class="section-label">The Numbers</div>
   <h2>How I underwrite a cabin</h2>
   <p>A listing agent's revenue claim is a starting point, not a number you borrow against. Before any client of mine writes an offer, we build the real picture:</p>
@@ -194,12 +598,13 @@
     <li><strong>Revenue comps, not projections.</strong> Actual performance data from comparable cabins — same bedroom count, same amenity tier, same micro-area — using AirDNA and real host data, not the broker's brochure.</li>
     <li><strong>Amenities priced honestly.</strong> Indoor pools, theater rooms, game lofts, and hot tubs each move nightly rate and occupancy differently. An indoor pool is the single strongest converter in this market.</li>
     <li><strong>Full expense load.</strong> Management (or your time), cleaning, utilities, cable/internet, hot tub service, pest control, capex reserve, insurance at STR rates — not homeowner rates.</li>
+    <li><strong>Compliance as a line item.</strong> The $250+ annual permit, extinguisher tagging, chimney sweep, sprinkler/alarm inspections where applicable — small numbers individually, but they belong in the pro forma, not in the surprise column.</li>
     <li><strong>Financing modeled both ways.</strong> Conventional second-home versus DSCR investor loans, at real current rates, so you know your debt service coverage before you commit.</li>
     <li><strong>Exit and stress tests.</strong> What happens to your numbers at 10% lower occupancy? If rates move? If the county adds a fee? If it only works in the best case, it doesn't work.</li>
   </ul>
 </div>
 
-<div class="alt">
+<div class="alt" id="tax">
   <div class="alt-inner">
     <div class="section-label">The Tax Angle</div>
     <h2 style="font-family:'Playfair Display',serif; font-size:clamp(24px,3vw,32px); font-weight:500; margin-bottom:1.25rem; color:#fff;">Why high earners buy cabins here</h2>
@@ -209,15 +614,39 @@
   </div>
 </div>
 
-<div class="section">
+<div class="section" id="contacts">
+  <div class="section-label">Who to Call</div>
+  <h2>The county directory, bookmarked for you</h2>
+  <p>The offices you'll actually deal with as an unincorporated-county STR owner. One tip straight from the Fire Marshal's office: they get heavy call volume — <strong>email gets a faster response than the phone.</strong></p>
+  <div class="contact-rows">
+    <div class="contact-row">
+      <div><span class="who">Sevier County Fire Marshal — STRU Permit Program</span><span class="why">Permits, change of information, occupancy changes, inspections</span></div>
+      <div class="how">865-774-3603<br><a href="mailto:firepermits@seviercountytn.org">firepermits@seviercountytn.org</a></div>
+    </div>
+    <div class="contact-row">
+      <div><span class="who">Building Inspection Department</span><span class="why">Certificate of occupancy verification</span></div>
+      <div class="how">865-774-7120</div>
+    </div>
+    <div class="contact-row">
+      <div><span class="who">Property Assessor's Office</span><span class="why">Confirming the parcel allows short-term rentals</span></div>
+      <div class="how">865-453-3242</div>
+    </div>
+    <div class="contact-row">
+      <div><span class="who">Public Records (Sevier County Archives)</span><span class="why">Permit application dates and inspection reports on resale cabins</span></div>
+      <div class="how">865-774-3627<br><a href="https://www.seviercountytn.gov/government/departments/services/archives.php" rel="noopener" target="_blank">Records request portal</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0;">
   <div class="cta-band">
     <div>
       <h3>Want the numbers on a specific cabin?</h3>
-      <p>Send me an address or a budget — I'll run the comps and tell you straight whether it pencils.</p>
+      <p>Send me an address or a budget — I'll run the comps, check the permit history, and tell you straight whether it pencils.</p>
     </div>
     <a href="mailto:soldbyjohntn@gmail.com?subject=STR%20Investment%20%E2%80%94%20Run%20My%20Numbers">Run My Numbers</a>
   </div>
-  <p class="disclaimer">This guide is general information, not legal, tax, or financial advice. Short-term rental ordinances, permit programs, and fire code requirements change and vary by parcel — always verify current requirements with the relevant jurisdiction and consult licensed professionals before purchasing. John Mendoza, Affiliate Broker, Realty Executives Associates, licensed in Tennessee.</p>
+  <p class="disclaimer">This guide is general information, not legal, tax, or financial advice. County program details summarized here are drawn from Sevier County Fire Marshal's Office published guidance (STRU inspection list revised 11/8/2024); city permit fees, zoning designations, and tax rates are summarized from publicly available sources and are subject to change without notice — always verify current requirements directly with the relevant city or county office (contact numbers above) and consult licensed professionals before purchasing. John Mendoza, Affiliate Broker, Realty Executives Associates, licensed in Tennessee.</p>
 </div>
 
 <footer>
